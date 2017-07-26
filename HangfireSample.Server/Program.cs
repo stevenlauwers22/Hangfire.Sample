@@ -7,6 +7,7 @@ namespace HangfireSample.Server
     {
         private static void Main()
         {
+            Console.Title = "HangfireSample.Server";
             GlobalConfiguration.Configuration.UseSqlServerStorage("HangfireSample");
 
             using (new BackgroundJobServer())
